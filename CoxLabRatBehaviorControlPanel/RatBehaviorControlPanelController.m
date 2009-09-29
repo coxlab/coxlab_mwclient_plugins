@@ -21,15 +21,15 @@
 //- (void)setDelegate:(id)new_delegate{
 //	delegate = new_delegate;
 	
-	#define RAT_CONTROL_PANEL_CALLBACK_KEY	@"ratcontrolpanelcallback"
+	#define RAT_CONTROL_PANEL_CALLBACK_KEY	"ratcontrolpanelcallback"
 	#define RESERVED_CODEC_CODE	0
 	
 	self.staircaseStates = [NSArray arrayWithObjects:ACTIVE_STRING, DISABLED_STRING, FROZEN_STRING, Nil];
 	
-	[delegate registerEventCallbackWithReceiver:self 
-					  andSelector:@selector(codecUpdated:)
-						   andKey:RAT_CONTROL_PANEL_CALLBACK_KEY
-				  forVariableCode:RESERVED_CODEC_CODE];
+//	[delegate registerEventCallbackWithReceiver:self 
+//                                     selector:@selector(codecUpdated:)
+//                                  callbackKey:RAT_CONTROL_PANEL_CALLBACK_KEY
+//                              forVariableCode:RESERVED_CODEC_CODE];
 }
 
 
@@ -37,7 +37,7 @@
 	//int code = [event code];
 	//if(code == RESERVED_CODEC_CODE){
 	
-	NSMutableArray *names = [delegate variableNames];
+	NSArray *names = [delegate variableNames];
 
 	for(int i = 0; i < [names count]; i++){
 		[self willChangeValueForKey:[names objectAtIndex:i]];

@@ -17,8 +17,12 @@
 	return YES;
 }
 
-- (NSNumber *)transformedValue:(NSNumber *)index{
-	if([index intValue] < 0){
+- (NSString *)transformedValue:(NSNumber *)index{
+	if(index == Nil){
+    return @"Disabled";
+  }
+  
+  if([index intValue] < 0){
 		return @"Frozen";
 	}
 	
@@ -30,7 +34,11 @@
 }
 
 - (NSNumber *)reverseTransformedValue:(NSString *)name{
-	if([name isEqualToString:@"Frozen"]){
+	if(name == Nil){
+    return [NSNumber numberWithInt:0];
+  }
+  
+  if([name isEqualToString:@"Frozen"]){
 		return [NSNumber numberWithInt:-1];
 	}
 	
