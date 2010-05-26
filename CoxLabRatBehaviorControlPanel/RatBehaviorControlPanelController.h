@@ -1,13 +1,13 @@
 //
 //  MWDebuggerWindowController.h
-//  MonkeyWorksDebugger
+//  MWorksDebugger
 //
 //  Created by David Cox on 2/12/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MonkeyWorksCocoa/MWWindowController.h"
+#import "MWorksCocoa/MWWindowController.h"
 
 NSString *FROZEN_STRING = @"Frozen";
 NSString *ACTIVE_STRING = @"Active";

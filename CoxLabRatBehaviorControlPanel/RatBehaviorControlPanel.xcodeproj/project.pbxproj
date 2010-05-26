@@ -29,7 +29,7 @@
 		5C6C0ED30D615F80001787A8 /* TB_StepOver.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C0ECD0D615F80001787A8 /* TB_StepOver.tiff */; };
 		5C6C0ED40D615F80001787A8 /* TB_Continue.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 5C6C0ECE0D615F80001787A8 /* TB_Continue.tiff */; };
 		5C6C0EE10D616513001787A8 /* RatBehaviorControlPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6C0EE00D616513001787A8 /* RatBehaviorControlPanelController.m */; };
-		5C6C0EF30D61676F001787A8 /* MonkeyWorksCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6C0EF20D61676F001787A8 /* MonkeyWorksCocoa.framework */; };
+		5C6C0EF30D61676F001787A8 /* MWorksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6C0EF20D61676F001787A8 /* MWorksCore.framework */; };
 		5C7A9B210D63E72100C3EE80 /* RatBehaviorControlPanel.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5C7A9B200D63E72100C3EE80 /* RatBehaviorControlPanel.xml */; };
 		5CAE9AF80DD358E5006C4E49 /* StaircaseStateValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE9AF70DD358E5006C4E49 /* StaircaseStateValueTransformer.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -61,7 +61,10 @@
 		5C6C0ECE0D615F80001787A8 /* TB_Continue.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = TB_Continue.tiff; sourceTree = "<group>"; };
 		5C6C0EDF0D616513001787A8 /* RatBehaviorControlPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatBehaviorControlPanelController.h; sourceTree = "<group>"; };
 		5C6C0EE00D616513001787A8 /* RatBehaviorControlPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatBehaviorControlPanelController.m; sourceTree = "<group>"; };
-		5C6C0EF20D61676F001787A8 /* MonkeyWorksCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MonkeyWorksCocoa.framework; path = /Library/Frameworks/MonkeyWorksCocoa.framework; sourceTree = "<absolute>"; };
+		5C6C0EF20D61676F001787A8 /* MWorksCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWorksCore.framework; path = /Library/Frameworks/MWorksCore.framework; sourceTree = "<absolute>"; };
+		5C78E9DF115946F300151A76 /* Development_10.5_compatible.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development_10.5_compatible.xcconfig; path = "/Library/Application Support/MWorks/Developer/Xcode/Development_10.5_compatible.xcconfig"; sourceTree = "<absolute>"; };
+		5C78E9E0115946F300151A76 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = "/Library/Application Support/MWorks/Developer/Xcode/Development.xcconfig"; sourceTree = "<absolute>"; };
+		5C78E9E1115946F300151A76 /* WARNING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WARNING.txt; path = "/Library/Application Support/MWorks/Developer/Xcode/WARNING.txt"; sourceTree = "<absolute>"; };
 		5C7A9B200D63E72100C3EE80 /* RatBehaviorControlPanel.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RatBehaviorControlPanel.xml; sourceTree = "<group>"; };
 		5CAE9AF60DD358E5006C4E49 /* StaircaseStateValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaircaseStateValueTransformer.h; sourceTree = "<group>"; };
 		5CAE9AF70DD358E5006C4E49 /* StaircaseStateValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaircaseStateValueTransformer.m; sourceTree = "<group>"; };
@@ -76,7 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
-				5C6C0EF30D61676F001787A8 /* MonkeyWorksCocoa.framework in Frameworks */,
+				5C6C0EF30D61676F001787A8 /* MWorksCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 		089C166AFE841209C02AAC07 /* MonkeyWorksDebugger */ = {
 			isa = PBXGroup;
 			children = (
+				5C78E9D5115946BF00151A76 /* External Config */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -129,7 +133,7 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C6C0EF20D61676F001787A8 /* MonkeyWorksCocoa.framework */,
+				5C6C0EF20D61676F001787A8 /* MWorksCore.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -172,6 +176,16 @@
 				5C6C0ECE0D615F80001787A8 /* TB_Continue.tiff */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		5C78E9D5115946BF00151A76 /* External Config */ = {
+			isa = PBXGroup;
+			children = (
+				5C78E9DF115946F300151A76 /* Development_10.5_compatible.xcconfig */,
+				5C78E9E0115946F300151A76 /* Development.xcconfig */,
+				5C78E9E1115946F300151A76 /* WARNING.txt */,
+			);
+			name = "External Config";
 			sourceTree = "<group>";
 		};
 		5CAE9AE30DD358A4006C4E49 /* Value Transformers */ = {
@@ -254,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/zsh;
-			shellScript = "export FULL_NAME=${PRODUCT_NAME}.${WRAPPER_EXTENSION}\n\n# make the directory if it isnt there\nmkdir -p ${FINAL_INSTALL_DIR}\n\n# copy the framework to the proper directory\nrm -dfR \"${FINAL_INSTALL_DIR}/${FULL_NAME}\"\n\ncp -Rf \"${BUILT_PRODUCTS_DIR}/${FULL_NAME}\" \"${FINAL_INSTALL_DIR}/\"\n";
+			shellScript = "export FULL_NAME=${PRODUCT_NAME}.${WRAPPER_EXTENSION}\nexport FINAL_INSTALL_DIR=${CLIENT_PLUGINS_DIR}\n\n# make the directory if it isnt there\nmkdir -p ${FINAL_INSTALL_DIR}\n\n# copy the framework to the proper directory\nrm -dfR \"${FINAL_INSTALL_DIR}/${FULL_NAME}\"\n\ncp -Rf \"${BUILT_PRODUCTS_DIR}/${FULL_NAME}\" \"${FINAL_INSTALL_DIR}/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -316,43 +330,18 @@
 		};
 		1DEB913F08733D840010E9CD /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C78E9E0115946F300151A76 /* Development.xcconfig */;
 			buildSettings = {
-				APP_SUPPORT_DIR = "/Library/Application Support/MonkeyWorks";
-				ARCHS = (
-					x86_64,
-					i386,
-				);
-				FINAL_INSTALL_DIR = "$(APP_SUPPORT_DIR)/Plugins/Client Plugins";
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MW_INCLUDE_DIR = "\"$(APP_SUPPORT_DIR)/Developer/include\"";
-				MW_LIB_DIR = "\"$(APP_SUPPORT_DIR)/Developer/lib\"";
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 			};
 			name = Development;
 		};
 		5C518D141086725D0004DBC0 /* Development (10.5 Compatible) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APP_SUPPORT_DIR = "/Library/Application Support/MonkeyWorks";
-				ARCHS = (
-					x86_64,
-					i386,
-				);
-				FINAL_INSTALL_DIR = "$(APP_SUPPORT_DIR)/Plugins/Client Plugins";
-				GCC_ENABLE_OBJC_GC = unsupported;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MW_INCLUDE_DIR = "\"$(APP_SUPPORT_DIR)/Developer/gcc40/include\"";
-				MW_LIB_DIR = "\"$(APP_SUPPORT_DIR)/Developer/gcc40/lib\"";
-				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = "Development (10.5 Compatible)";
 		};

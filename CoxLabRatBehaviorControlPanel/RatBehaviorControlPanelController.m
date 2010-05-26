@@ -1,6 +1,6 @@
 //
 //  MWDebuggerWindowController.m
-//  MonkeyWorksDebugger
+//  MWorksDebugger
 //
 //  Created by David Cox on 2/12/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
@@ -8,9 +8,9 @@
 
 #import "RatBehaviorControlPanelController.h"
 
-#import "MonkeyWorksCocoa/MWClientServerBase.h"
-//#import "MonkeyWorksCore/Client.h"
-#import "MonkeyWorksCocoa/MWCocoaEvent.h"
+#import "MWorksCocoa/MWClientServerBase.h"
+//#import "MWorksCore/Client.h"
+#import "MWorksCocoa/MWCocoaEvent.h"
 
 
 @implementation RatBehaviorControlPanelController
